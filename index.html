@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Projeto 78</title>
+</head>
+<body>
+  <center>
+    <h1>álbum de familia</h1>
+    <img id="familyMemberImage" src="Família.jfif">
+    <h4 id="familyMemberName">Lu</h4>
+    <button onclick="update()">Próximo</button>
+  </center>
+  <script>
+    var nomes = ["Família", "Lu","Thomas","Gael","Bia"]
+    var imagens = ["Família.jfif", "Lu.jfif","Thomas.jpg","Gael.jfif","Bia.jfif"]
+    var i = 0;
+    function update()
+    {
+      i++;
+      var nunbersOfFamilymenberInArray = 5
+      if(i > nunbersOfFamilymenberInArray )
+      {
+        i = 0
+      }
+      document.getElementById("familyMemberImage").src = updatedImage;
+      document.getElementById("familyMemberName").innerHTML = updatedName
+    }
+  </script>  
+</body>
+</html>
